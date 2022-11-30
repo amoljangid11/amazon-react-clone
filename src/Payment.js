@@ -16,11 +16,11 @@ function Payment() {
     const stripe = useStripe();
     const elements = useElements();
 
-    const [succeeded, setSucceeded] = useState(false);
-    const [processing, setProcessing] = useState("");
-    const [error, setError] = useState(null);
-    const [disabled, setDisabled] = useState(true);
-    const [clientSecret, setClientSecret] = useState(true);
+    const [ succeeded, setSucceeded ] = useState(false);
+    const [ processing, setProcessing ] = useState("");
+    const [ error, setError ] = useState(null);
+    const [ disabled, setDisabled ] = useState(true);
+    const [ clientSecret, setClientSecret ] = useState(true);
 
     useEffect(() => {
         // generate the special stripe secret which allows us to charge a customer
